@@ -42,7 +42,8 @@ def isIntersecting(x1, x2, y1, y2, x3, x4, y3, y4):
 output = isIntersecting(x1, x2, y1, y2, x3, x4, y3, y4)
 
 if(output):
-    print("Both lines are not intersecting")
+    print("Both lines are intersecting then it  is a triangle")
 else:
     print("Both lines are not intersecting")
+    
 
