@@ -9,7 +9,8 @@
 \usepackage[cmex10]{amsmath}
 
 \usepackage{amsthm}
-
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 \usepackage{mathrsfs}
 \usepackage{txfonts}
 \usepackage{stfloats}
@@ -31,7 +32,8 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{graphicx}
 \usepackage{tkz-euclide}
-
+\usepackage{epsfig}
+\usepackage{}
 \usetikzlibrary{calc,math}
 \usepackage{listings}
     \usepackage{color}                                            %%
@@ -95,12 +97,12 @@ columns=fullflexible
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
-\providecommand{\abs}[1]{\vert#1\vert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
-\providecommand{\norm}[1]{\Vert#1\rVert}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 %\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
-\providecommand{\mean}[1]{E[ #1 ]}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
@@ -123,8 +125,7 @@ columns=fullflexible
      \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
      \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 \vspace{3cm}
-\title{ASSIGNMENT-2}
-\author{Ojaswa Pandey}
+\title{Assignment 1}
 \maketitle
 \newpage
 \bigskip
@@ -132,79 +133,63 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download all python codes from 
 \begin{lstlisting}
-https://github.com/behappy0604/Assignment2
+https://github.com/behappy0604/Assignment1
 \end{lstlisting}
 %
 and latex-tikz codes from 
 %
 \begin{lstlisting}
-https://github.com/behappy0604/Assignment2
+https://github.com/behappy0604/Assignment1
 \end{lstlisting}
 %
-\section{Question No. 2.39}
-Construct a quadrilateral MORE where $MO = 6, OR = 4.5, \angle M = 60 \degree, \angle O = 105 \degree$ and $\angle R = 105 \degree$.
-%
-\section{SOLUTION}
-For this quadrilateral MORE we have,
-\begin{align}
-\angle M +\angle O +\angle R = 60\degree + 105\degree + 105\degree=270\degree,
-\end{align}
+\section{constr-2.27 part1}
+\ Construct a triangle: $\angle$A = 85 $^{\circ}$ ,$\angle$B = 115 $^{\circ}$ and AB = 5.
 
-\begin{enumerate}
-    \item Now on calculating, we get
-\begin{align}
-&\implies \angle E + 270\degree  = 360\degree,
-\\
-&\implies \angle E = 90\degree\label{eq1}
-\end{align}
- \item Now taking sum of all the angles given and \eqref{eq1}  \text{we get}
-\begin{align}
-\angle M + \angle O +\angle R +\angle E =360\degree
-\end{align}
-So construction of given quadrilateral is possible as sum of all the angles is equal to $360\degree$.
-\\
- \item Now,Using cosine formula in $\triangle MOR$ we can find RM:
-\begin{multline}
-\implies {\norm{\vec{R}-\vec{M}}^2}=
-\\
-{\norm{\vec{M}-\vec{O}}^2}+ \norm{\vec{O}-\vec{R}}^2-2\times\norm{\vec{M}-\vec{O}} \times \norm{\vec{O}-\vec{R}}\cos{O}
-\end{multline}
-\begin{align}
-&\implies RM=8.38
-\end{align}
-\item Also in $\triangle MOR$, Let \angle OMR =$\theta$, \angle MOR =$\beta$, \angle ORM = $\gamma$.Now using sine formula in $\triangle MOR$ we have
-\begin{align}
-\frac{{\sin \theta}}{OR} = \frac{{\sin \beta}}{RM} = \frac{{\sin \gamma}}{MO}
-\end{align}
-\begin{align}
-\theta=\sin^{-1} (0.5186);
-\\
-\theta=\angle OMR= 31.24 \degree ;
-\end{align}
-\item Now polar coordinates of vertex R of $\triangle MOR$ be
-\\$(RM \cos \theta,RM\sin \theta)$, we get
-\begin{align}
-R(8.38\times \cos31.24 ,8.38\times \sin31.24)
-\\
-\implies \vec{R}= \myvec{7.16\\4.35}
-\end{align}
-\item Now in $\triangle MER$,we get
-\begin{align}
-\angle EMR= 28.76\degree
-\end{align}
-\item Considering the polar coordinates of E of $\triangle MER$ and solving we get,
-\begin{align}
-\implies \vec{E}= \myvec{3.67 \\ 6.36}
-\end{align}
-    \item Now, we have the coordinate of vertices M,O,R,E as
-\vec{M}= \myvec{0 \\ 0}, \vec{O}= \myvec{6 \\ 0},  \vec{R}= \myvec{7.16 \\ 4.35}, \vec{E}= \myvec{3.67 \\ 6.36}.
-    \item On constructing the given quadilateral on python we get:
-\end{enumerate}
-\numberwithin{figure}{section}
-\begin{figure}[!ht]
-\centering
-\includegraphics[ width=\columnwidth, height=5 cm]{quadilateral more.png}
-\caption{Quadrilateral MORE}
-\label{fig:Quadrilateral MIST}	
+\section{Exaplanation}
+%
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da07068098265908507] 
+\draw    (304,62) -- (424,182) ;
+%Straight Lines [id:da9183397026045734] 
+\draw    (304,62) -- (291,180) ;
+%Straight Lines [id:da6639889359129583] 
+\draw    (291,180) -- (424,182) ;
+%Shape: Arc [id:dp23297095368791165] 
+\draw  [draw opacity=0] (401.04,179.95) .. controls (401.01,179.47) and (401,178.99) .. (401,178.5) .. controls (401,172.98) and (402.62,167.81) .. (405.44,163.39) -- (432.5,178.5) -- cycle ; \draw   (401.04,179.95) .. controls (401.01,179.47) and (401,178.99) .. (401,178.5) .. controls (401,172.98) and (402.62,167.81) .. (405.44,163.39) ;
+%Shape: Arc [id:dp5218605505907268] 
+\draw  [draw opacity=0] (315.87,180.32) .. controls (314.82,174.14) and (310.73,168.19) .. (303.36,162.97) .. controls (300.04,160.63) and (296.22,158.54) .. (291.99,156.73) -- (227,190) -- cycle ; \draw   (315.87,180.32) .. controls (314.82,174.14) and (310.73,168.19) .. (303.36,162.97) .. controls (300.04,160.63) and (296.22,158.54) .. (291.99,156.73) ;
+
+% Text Node
+\draw (345,188) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize] [align=left] {5};
+% Text Node
+\draw (278,178) node [anchor=north west][inner sep=0.75pt]   [align=left] {A};
+% Text Node
+\draw (434.5,181.5) node [anchor=north west][inner sep=0.75pt]   [align=left] {B};
+% Text Node
+\draw (296,46) node [anchor=north west][inner sep=0.75pt]   [align=left] {C};
+% Text Node
+\draw (376,168) node [anchor=north west][inner sep=0.75pt]  [font=\tiny] [align=left] {115$ $};
+% Text Node
+\draw (313,155) node [anchor=north west][inner sep=0.75pt]  [font=\tiny] [align=left] {85};
+
+
+\end{tikzpicture}
+
+The above mentioned triangle cannot be formed.
+As if we do addition of both angles $\angle$A and $\angle$B
+
+85$^{\degree}$+115$^{\degree}$= 200$^{\degree}$
+
+But according to the theorem sum of all angles of triangle =180$^{\degree}$
+so here, $ 200\degree > 180\degree $
+Hence triangle cannot be formed.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{Figure_1.png}
+    \caption{ Constructed a triangle using python}
 \end{figure}
 \end{document}
