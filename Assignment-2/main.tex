@@ -121,7 +121,7 @@ https://github.com/behappy0604/Summer-Internship-IITH/tree/main/Assignment-2
 and latex-tikz codes from 
 %
 \begin{lstlisting}
-https://github.com/behappy0604/Summer-Internship-IITH/tree/main/Assignment-2/
+https://github.com/behappy0604/Summer-Internship-IITH/tree/main/Assignment-2
 \end{lstlisting}
 %
 \section{Question No. 2.39}
@@ -158,16 +158,16 @@ So construction of given quadrilateral is possible as sum of all the angles is e
 \end{align}
 Now we will use vector equation of a line,
 \begin{align}
-    \vec{R}= \vec{O}+ \lambda \myvec{cos75\degree \\ sin75\degree}
+    \vec{R}= \vec{O}+\lambda m
 \end{align}
 \begin{align}
-    \vec{R}-\vec{O}= \lambda \myvec{0.258\\0.965}
+   \implies \vec{R}= \vec{O}+ \lambda \times \myvec{cos75\degree \\ sin75\degree}
 \end{align}
 \begin{align}
-    \implies {\norm{\vec{R}-\vec{O}}}= \lambda \times{\norm{\myvec{0.258\\0.965}}}
+    \implies {\norm{\vec{R}-\vec{O}}}= \abs{\lambda} \times{\norm{\myvec{0.258\\0.965}}}
 \end{align}
 \begin{align}
-   \implies 4.5= \lambda \times 1
+   \implies 4.5= \abs{\lambda} \times 1
 \end{align}
 \begin{align}
     \implies \lambda = 4.5
@@ -180,17 +180,18 @@ Now we will use vector equation of a line,
      \implies \vec{R}= \myvec{6\\0}+\myvec{1.161\\4.342}
  \end{align}
  \begin{align}
-     \vec{R}= \myvec{7.161\\4.342}
+    \implies  \vec{R}= \myvec{7.161\\4.342}
  \end{align}
  \item Now in $\triangle MER$,we know
  \begin{align}
  \angle M=28.76\degree, \angle E=90\degree.
   \end{align}
+  We know that sum of the angles of a triangle is 180\degree
  \begin{align}
      \implies \angle M+ \angle E+ \angle R= 180\degree
  \end{align}
  \begin{align}
-     28.76\degree+90\degree+\angle R= 180\degree
+     \implies 28.76\degree+90\degree+\angle R= 180\degree
  \end{align}
  \begin{align}
  \implies \angle R=61.24\degree
@@ -198,24 +199,27 @@ Now we will use vector equation of a line,
  \item Now applying sine law of triangle, we get \\
  EM= 7.34\\
  \item Using the vector equation of a line, 
-  \begin{align}
- \vec{E}= \vec{M}+ \lambda \myvec{cos60\degree \\ sin60\degree}
+ \begin{align}
+     \vec{E}= \vec{M}+ \lambda m
  \end{align}
  \begin{align}
-       \vec{E}-\vec{M}= \lambda \myvec{0.50\\0.87}
+     \implies  \vec{E}-\vec{M}= \lambda \times \myvec{cos60\degree\\sin60\degree}
  \end{align}
  \begin{align}
-    \implies {\norm{\vec{E}-\vec{M}}}= \lambda \times{\norm{\myvec{0.50\\0.87}}}
+    \implies {\norm{\vec{E}-\vec{M}}}= \abs{\lambda} \times{\norm{\myvec{0.50\\0.87}}}
 \end{align}
 \begin{align}
-   \implies 7.34= \lambda \times 1
+   \implies 7.34= \abs{\lambda} \times 1
 \end{align}
 \begin{align}
     \implies \lambda = 7.34
 \end{align}
 \item Now we will calculate the co-ordinates of E,
 \begin{align}
- \vec{E}= \vec{M}+ 7.34\myvec{0.50\\0.87}
+ \vec{E}= \vec{M}+ \lambda \times \myvec{cos60\degree\\sin60\degree}
+ \end{align}
+ \begin{align}
+     \implies \vec{E}= \myvec{0\\0}+7.34 \times \myvec{0.50\\0.87}
  \end{align}
  \begin{align}
      \implies \vec{E}= \myvec{0\\0}+\myvec{3.67\\6.36}
