@@ -80,9 +80,20 @@ columns=fullflexible
 \filldraw (6,0) circle[radius=2.5pt];
 \filldraw (7.16,4.35) circle[radius=2.5pt];
 \filldraw (3.67,6.36) circle[radius=2.5pt];
+\tkzMarkAngle(E,R,O)
+\tkzLabelAngle[pos = 0.6](E,R,O){$\gamma$}
+
 \tkzMarkAngle(O,M,R)
-\tkzLabelAngle[pos = 0.6](O,M,R){$\theta$}
+\tkzLabelAngle[pos = 1.6](O,M,R){$\theta_2$}
+
 \tkzMarkAngle(M,E,R)
-\tkzLabelAngle[pos = 0.6](M,E,R){$\090$}
+\tkzLabelAngle[pos = 0.6](M,E,R){$\beta$}
+
+\tkzMarkAngle(R,M,E)
+\tkzLabelAngle[pos = 1.6](R,M,E){$\theta_1$}
+
+\tkzMarkAngle(R,O,M)
+\tkzLabelAngle[pos = 0.6](R,O,M){$\alpha$}
+
 \end{tikzpicture}
 \end{document}
