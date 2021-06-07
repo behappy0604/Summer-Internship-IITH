@@ -146,9 +146,13 @@ Construct a quadrilateral MORE where $MO = 6, OR = 4.5, \angle M = 60 \degree, \
     \end{align}
     \item Also, Let us assume the other two sides as
 \begin{align}
- &\norm{\vec{R}-\vec{E}}=c \label{eq5}
+ &\norm{\vec{R}-\vec{E}}=c
  \\
-  &\norm{\vec{M}-\vec{E}} =d \label{eq6}
+  &\norm{\vec{M}-\vec{E}} =d 
+  \\
+  &\theta= \theta_1 + \theta_2
+  \\
+  &\delta= 180\degree-\alpha = 75\degree
 \end{align}  
     \item Now on calculating, we get
 \begin{align}
@@ -190,10 +194,10 @@ So construction of given quadrilateral is possible as sum of all the angles is e
 \begin{lemma}
 Exact co-ordinates of the given \vec{R} and \vec{E} can be expresssed as
 \begin{align}
- \vec{R}= \vec{O}+ \abs{\lambda}\times \myvec{cos\theta\\sin\theta}
+ \vec{R}= \vec{O}+ \abs{b}\times \myvec{\cos\delta\\\sin\delta}
 \end{align}
  \begin{align}
- \vec{E}= \vec{M}+ \abs{\lambda}\times \myvec{cos\theta\\sin\theta}
+ \vec{E}= \vec{M}+ \abs{d}\times \myvec{\cos\theta\\\sin\theta}
  \end{align}
  \end{lemma}
  \begin{proof}
@@ -202,19 +206,19 @@ Exact co-ordinates of the given \vec{R} and \vec{E} can be expresssed as
  \end{itemize}
  The vector equation of a line can be given by as,
  \begin{align}
-\implies \vec{R}= \vec{O}+\abs{\lambda}\times \myvec{cos75\degree\\sin75\degree}
+\implies \vec{R}= \vec{O}+\abs{b}\times \myvec{\cos75\degree\\\sin75\degree}
  \end{align}
   \begin{align}
-     \implies  \vec{R}-\vec{O}= \lambda \times \myvec{cos75\degree\\sin75\degree}
+     \implies  \vec{R}-\vec{O}= b \times \myvec{\cos75\degree\\\sin75\degree}
  \end{align}
  \begin{align}
-    \implies {\norm{\vec{R}-\vec{O}}}= \abs{\lambda} \times{\norm{\myvec{cos75\degree\\sin75\degree}}}
+    \implies {\norm{\vec{R}-\vec{O}}}= \abs{b} \times{\norm{\myvec{\cos75\degree\\\sin75\degree}}}
 \end{align}
 \begin{align}
-   \implies 4.5= \abs{\lambda} \times 1
+   \implies 4.5= \abs{b} \times 1
 \end{align}
 \begin{align}
-    \implies \lambda = 4.5 = b
+    \implies b = 4.5 
 \end{align}
  Putting the values in the above equation we get,
  \begin{align}
@@ -231,16 +235,16 @@ Exact co-ordinates of the given \vec{R} and \vec{E} can be expresssed as
  \end{itemize}
  The vector equation of a line can be given by as,
   \begin{align}
-     \implies  \vec{E}-\vec{M}= \lambda \times \myvec{cos60\degree\\sin60\degree}
+     \implies  \vec{E}-\vec{M}= d \times \myvec{\cos60\degree\\\sin60\degree}
  \end{align}
  \begin{align}
-    \implies {\norm{\vec{E}-\vec{M}}}= \abs{\lambda} \times{\norm{\myvec{0.50\\0.87}}}
+    \implies {\norm{\vec{E}-\vec{M}}}= \abs{d} \times{\norm{\myvec{0.50\\0.87}}}
 \end{align}
 \begin{align}
-   \implies 7.34= \abs{\lambda} \times 1
+   \implies 7.34= \abs{d} \times 1
 \end{align}
 \begin{align}
-    \implies \lambda = 7.34= d
+    \implies d = 7.34
 \end{align}
  Putting the values in the above equation we get,
  \begin{align}
@@ -261,7 +265,7 @@ Exact co-ordinates of the given \vec{R} and \vec{E} can be expresssed as
 \end{enumerate}
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
-\includegraphics[ width=\columnwidth, height=6 cm]{Figure_2.png}
+\includegraphics[ width=\columnwidth, height=6 cm]{figure.png}
 \caption{Quadrilateral MORE}
 \label{fig:Quadrilateral MORE}	
 \end{figure}
