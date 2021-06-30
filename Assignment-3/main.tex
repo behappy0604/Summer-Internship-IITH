@@ -147,26 +147,29 @@ Radius & $r_$ & 4 \\
 \begin{enumerate}
     \item  Let us generalise the given data:
 \begin{align}
-\vec{B}= \myvec{0\\0}, \vec{A}=\myvec{0\\6}, \vec{C}= \myvec{8\\0}
+\vec{B}= \myvec{0\\0}, \vec{A}=\myvec{0\\c}, \vec{C}= \myvec{a\\0}
 \end{align}
 \begin{align}
-    \angle B= 90\degree
+    \beta= \angle DBC
 \end{align}
 \begin{align}
-    \angle D=90\degree (\because  BD \perp AC)
+    \alpha= \angle PEC
 \end{align}
 \begin{align}
-    \vec{BC}=8
+\vec{AB}=c
 \end{align}
 \begin{align}
-    \vec{AC}=10 \text{(Using Pythagoras's Theorem)}
+    \vec{BC}=a
 \end{align}
 \begin{align}
-    \vec{AB}=6
+    \vec{AC}=b
+\end{align}
+\begin{align}
+    \vec{BD}=t
 \end{align}
 \item Let $\vec{E}$ be the the midpoint of $\vec{BC}$, therefore
 \begin{align}
-    \vec{E}= \myvec{4\\0}
+    \vec{E}= \frac{\vec{B}+\vec{C}}{2}= \myvec{\frac{a}{2}\\0}
     \end{align}
     \item Now taking $\vec{E}$ as center we will draw a circle of radius 4 which will circumscribe $\triangle BCD$.\\
     
@@ -181,19 +184,17 @@ Radius & $r_$ & 4 \\
     \begin{align}
        \vec{BD}= 4.8
     \end{align}
-    \item In $\triangle$BDC, using Pythagoras theorem we get:
+      \begin{align}
+        \angle DBC=53.13\degree
+    \end{align}
+  \item   Now, \begin{align}
+        \vec{D}= \vec{B}+\myvec{r\cos \beta\\r\sin \beta}
+    \end{align}
     \begin{align}
-        \vec{DC}= 6.4
+     \vec{D}= \myvec{0\\0}+\myvec{0.60\\0.799}   
     \end{align}
-    therefore, \begin{align}
-    \vec{AD}= 3.6 (\because \vec{AC}= \vec{AD}+\vec{DC})
-    \end{align}
-    \item Using Sine formula we get:
     \begin{align}
-        \angle DEC=106.48\degree
-    \end{align}
-    therefore, \begin{align}
-        \vec{D}= \vec{E}+\myvec{r\cos E\\r\sin E}
+        \vec{D}=\myvec{2.88\\3.84}
     \end{align}
 \item Here,
 \begin{align}
@@ -207,7 +208,13 @@ Radius & $r_$ & 4 \\
 \end{align}
 \item Now coordinates of $\vec{P}$ from center of circle $\vec{E}$ will be,
 \begin{align}
-    \vec{P}= \vec{E}+\myvec{r\cos E\\r\sin E}
+    \vec{P}= \vec{E}+\myvec{r\cos \alpha\\r\sin \alpha}
+\end{align}
+\begin{align}
+    \vec{P}=\myvec{4\\0}+\myvec{1.53\\3.69}
+\end{align}
+\begin{align}
+    \vec{P}=\myvec{5.53\\3.69}
 \end{align}
 \item Therefore, we have coordinates as,\\
 \begin{multiline}
