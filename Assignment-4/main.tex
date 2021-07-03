@@ -138,7 +138,7 @@ x+$\frac{1}{x} =3$,  x $\neq$=0
 \end{align}
 \item The vector form of the equation is:
 \begin{align}
-\vec{x}^T\myvec{1&0\\0&0}\vec{x}+\myvec{-3&0}\vec{x}-1=0
+\vec{x}^T\myvec{1&0\\0&0}\vec{x}+\myvec{-3&-1}\vec{x}+1=0
 \end{align}
 \item Comparing \eqref{eq:2} with standard quadractic equation $ax^2+bx+1=0$ we get:
 \begin{align}
@@ -157,16 +157,51 @@ x+$\frac{1}{x} =3$,  x $\neq$=0
 \begin{align}
   D= 5  
 \end{align}
-Thus the equation has real roots.\\
-\item We know that:
+\item The nature of the roots of equation $x^2-3x+1=0$:
 \begin{align}
-    x= \frac{\sqrt{-b\pm D}}{4a}
+   \vec{x}^T\myvec{1&0\\0&0}\vec{x}+2\myvec{\frac{-3}{2}\\\frac{-1}{2}}\vec{x}+1=0 
+   \end{align}
+   Here,
+\begin{align}
+\vec{V} = \myvec{1 & 0 \\ 0 & 0},\vec{u}=\myvec{\frac{-3}{2} \\ \frac{-1}{2}},f=1
 \end{align}
-Putting the values we get
+Using eigenvalue decomposition,
+\begin{align}
+\vec{D} = \myvec{0 & 0\\0 & 1} ,\vec{P}=\myvec{0 & 1\\1 & 0}
+\end{align}
+Now,
+\begin{align}
+\myvec{\vec{u}^T + \eta\vec{p_1}^T \\ \vec{V}}\vec{c} &= \myvec{-f \\ \eta\vec{p_1}-\vec{u}} 
+\end{align}
+$\therefore$Vertex $\vec{c}$ is given by
+\begin{align}
+\myvec{\frac{-3}{2} & -1 \\ 1 & 0 \\ 0 & 0}\vec{c} &= \myvec{-1\\ \frac{-3}{2} \\ 0} \\
+\implies  \myvec{-\frac{-3}{2} & -1 \\ 1 & 0}\vec{c} &= \myvec{-1\\ \frac{3}{2}}
+\\
+\implies \vec{c} &= \myvec{\frac{3}{2}\\\frac{-5}{4}}
+\end{align}
+Now,
+\begin{align}
+\vec{p_1}^T\vec{c} &= \myvec{0 & 1}\myvec{\frac{3}{2}\\\frac{-5}{4}}
+\\
+&= \frac{-5}{4}
+\end{align}
+and,
+\begin{align}
+\vec{p_2}^T\vec{V}\vec{p_2} &= \myvec{1 & 0}\myvec{1 & 0\\0& 0}\myvec{1 \\ 0}
+\\
+&= 1
+\end{align}
+$\because$
+\begin{align}
+(\vec{p_1}^T\vec{c})(\vec{p_2}^T\vec{V}\vec{p_2}) = \frac{-5}{4}<0
+\end{align}
+Hence,the given equation has real and distinct roots.\\
+\item The values of $\vec{x}$ is calculated using python:
 \begin{align}
     \vec{x}=\myvec{2.6180\\0}, \myvec{0,38196\\0}
 \end{align}
-\item The values of $\vec{x}$ are found in the python code. The plot of the quadratic equation is:
+\item The plot of the quadratic equation is:
 \end{enumerate}
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
