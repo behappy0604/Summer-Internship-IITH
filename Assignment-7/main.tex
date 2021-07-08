@@ -80,7 +80,7 @@ columns=fullflexible
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
 \providecommand{\abs}[1]{\vert#1\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
-\providecommand{\norm}[1]{\Vert#1\rVert}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 %\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{E[ #1 ]}
@@ -140,7 +140,7 @@ are equal.
 \\
 \implies\norm{\vec{x}}^2+\norm{\vec{A}}^2-2\vec{A}^T\vec{x}
 \\
-=\norm{\vec{x}}^2+\norm{\vec{B}}^2-2\vec{B}^T\vec{x}
+\implies \norm{\vec{x}}^2+\norm{\vec{B}}^2-2\vec{B}^T\vec{x}
 \\
 \implies 2\vec{A}^T\vec{x}-2\vec{B}^T\vec{x}=\norm{\vec{A}}^2-\norm{\vec{B}}^2  \label{vec/29/eq1}
 \end{align}
@@ -176,19 +176,20 @@ $\because\vec{x}$ is perpendicular to line joining $\vec{A}$ and $\vec{B}$
 \begin{align}
 \implies\myvec{2\vec{A}^T-2\vec{B}^T}\brak{\frac{\vec{A}+\vec{B}}{2}}=\norm{\vec{A}}^2-\norm{\vec{B}}^2 
 \end{align}
-$\implies \frac{\vec{A}+\vec{B}}{2}$ satisfies \eqref{vec/29/eq1}
-\item $\therefore$ $\vec{x}$ is the plane that is perpendicular bisector of the line joining the given points 
+$\implies \frac{\vec{A}+\vec{B}}{2}$ satisfies \eqref{vec/29/eq1}\\
+\item $\vec{x}$ is the plane that is perpendicular bisector of the line joining the given points \\
 \end{itemize}
 \item Putting given values $\vec{A}$ and $\vec{B}$ in \eqref{vec/29/eq1},we get 
 \begin{align}
 2\myvec{3 & 4 & -5}\vec{x}-2\myvec{-2 & 1 & 4}\vec{x}
-\\
-=\norm{\myvec{3\\4\\-5}}^2-\norm{\myvec{-2\\1\\4}}^2
-\\
-\implies\myvec{6 & 8 & -10}\vec{x}+\myvec{4 & -2 & -8}\vec{x} 
-\\
-=50-21
-\\
+\end{align}
+\begin{align}
+    & = \norm{\myvec{3\\4\\-5}}^2 - \norm{\myvec{-2\\1\\4}}^2
+\end{align}
+\begin{align}
+ \implies\myvec{6 & 8 & -10}\vec{x}+\myvec{4 & -2 & -8}\vec{x} =50-21   
+\end{align}
+\begin{align}
 \implies\myvec{10 & 6 & -18}\vec{x}=29
 \end{align}
 $\therefore$ The required equation is
