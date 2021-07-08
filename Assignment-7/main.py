@@ -7,6 +7,14 @@ import numpy as np
 import subprocess
 import shlex
 #end if
+def drawVertex(coordinate, name):
+    ax.scatter(coordinate[0], coordinate[1], coordinate[2])
+    ax.text(coordinate[0] * (1 + 0.1), coordinate[1] * (1 - 0.1), coordinate[2] , name)
+#coordiantes
+(A,B) = ((3,4,-5), (-2,1,4))
+
+
+
 
 #creating x,y for 3D plotting
 xx, yy = np.meshgrid([-10,10], range(10))
@@ -14,6 +22,9 @@ xx, yy = np.meshgrid([-10,10], range(10))
 fig = plt.figure()
 ax = fig.add_subplot(111,projection='3d')
 
+# drawing vertex 
+drawVertix(A, "A")
+drawVertix(B, "B")
 
 #defining planes:  n.T * x = c 
 n1 = np.array([10,6,-18]).reshape((3,1))
@@ -26,6 +37,7 @@ z = (c1-n1[0]*xx-n1[1]*yy)/(n1[2])
 #plotting planes
 Plane=ax.plot_surface(xx, yy, z,label="P", color='b',alpha=0.25)
 Plane._facecolors2d=Plane._facecolors3d
+
 
 #show plot
 plt.xlabel('$x$')
@@ -45,6 +57,5 @@ z = [-5, 4]
  
  # Connect the first two points in the array
 figure = ax.plot(x, y, z, c='r')
-
 
 #plt.show()
