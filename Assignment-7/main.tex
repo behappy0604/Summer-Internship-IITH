@@ -133,27 +133,28 @@ $
 are equal. 
 \section{Solution}
 \begin{enumerate}
+\item Let $\vec{P}$=$\vec{x}$\\
 \item From the given information,
 \begin{align}
-\norm{\vec{P}-\vec{A}}^2=\norm{\vec{P}-\vec{B}}^2
+\norm{\vec{x}-\vec{A}}^2=\norm{\vec{x}-\vec{B}}^2
 \\
-\implies\norm{\vec{P}}^2+\norm{\vec{A}}^2-2\vec{A}^T\vec{P}
+\implies\norm{\vec{x}}^2+\norm{\vec{A}}^2-2\vec{A}^T\vec{x}
 \\
-=\norm{\vec{P}}^2+\norm{\vec{B}}^2-2\vec{B}^T\vec{P}
+=\norm{\vec{x}}^2+\norm{\vec{B}}^2-2\vec{B}^T\vec{x}
 \\
-\implies 2\vec{A}^T\vec{P}-2\vec{B}^T\vec{P}=\norm{\vec{A}}^2-\norm{\vec{B}}^2  \label{vec/29/eq1}
+\implies 2\vec{A}^T\vec{x}-2\vec{B}^T\vec{x}=\norm{\vec{A}}^2-\norm{\vec{B}}^2  \label{vec/29/eq1}
 \end{align}
-\item Equation of plane is $\vec{n}^T\vec{P}=\vec{d}$
+\item Equation of plane is $\vec{n}^T\vec{x}=\vec{d}$
 \\
 where,$\vec{n}^T$ is the normal vector to the plane 
 \begin{itemize}
 \item From \eqref{vec/29/eq1},
 \begin{align}
-\myvec{2\vec{A}^T-2\vec{B}^T}\vec{P}=\norm{\vec{A}}^2-\norm{\vec{B}}^2 \label{vec/29/eq2}
+\myvec{2\vec{A}^T-2\vec{B}^T}\vec{x}=\norm{\vec{A}}^2-\norm{\vec{B}}^2 \label{vec/29/eq2}
 \end{align}
-$\vec{P}$ is a plane and it is perpendicular bisector to $\vec{A}-\vec{B}$
+$\vec{x}$ is a plane and it is perpendicular bisector to $\vec{A}-\vec{B}$
 \\
-$\because\vec{P}$ is perpendicular to line joining $\vec{A}$ and $\vec{B}$
+$\because\vec{x}$ is perpendicular to line joining $\vec{A}$ and $\vec{B}$
 \item Midpoint of $\vec{A}$ and $\vec{B}$
 \begin{align}
 \vec{M}= \frac{\vec{A}+\vec{B}}{2}
@@ -176,23 +177,31 @@ $\because\vec{P}$ is perpendicular to line joining $\vec{A}$ and $\vec{B}$
 \implies\myvec{2\vec{A}^T-2\vec{B}^T}\brak{\frac{\vec{A}+\vec{B}}{2}}=\norm{\vec{A}}^2-\norm{\vec{B}}^2 
 \end{align}
 $\implies \frac{\vec{A}+\vec{B}}{2}$ satisfies \eqref{vec/29/eq1}
-\item $\therefore$ $\vec{P}$ is the plane that is perpendicular bisector of the line joining the given points 
+\item $\therefore$ $\vec{x}$ is the plane that is perpendicular bisector of the line joining the given points 
 \end{itemize}
 \item Putting given values $\vec{A}$ and $\vec{B}$ in \eqref{vec/29/eq1},we get 
 \begin{align}
-2\myvec{3 & 4 & -5}\vec{P}-2\myvec{-2 & 1 & 4}\vec{P}
+2\myvec{3 & 4 & -5}\vec{x}-2\myvec{-2 & 1 & 4}\vec{x}
 \\
 =\norm{\myvec{3\\4\\-5}}^2-\norm{\myvec{-2\\1\\4}}^2
 \\
-\implies\myvec{6 & 8 & -10}\vec{P}+\myvec{4 & -2 & -8}\vec{P} 
+\implies\myvec{6 & 8 & -10}\vec{x}+\myvec{4 & -2 & -8}\vec{x} 
 \\
 =50-21
 \\
-\implies\myvec{10 & 6 & -18}\vec{P}=29
+\implies\myvec{10 & 6 & -18}\vec{x}=29
 \end{align}
 $\therefore$ The required equation is
 \begin{align}
-\myvec{10 & 6 & -18}\vec{P}=29
+\myvec{10 & 6 & -18}\vec{x}=29
 \end{align}
+
+\item The required figure for the above equation is as follows:
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{figure.png}
+    \caption{Plane bisecting Line}
+    \label{quadform/73/b/fig:Plane bisecting Line}
+\end{figure} 
 \end{enumerate}
 \end{document}
