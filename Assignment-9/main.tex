@@ -143,13 +143,27 @@ $
 $
 \end{multicols}
 \section{Solution}
+\begin{lemma}
+The Characteristic function of random variable X is defined as
+\begin{align}
+    C_{X}(t)=\mathbb{E}[e^{itX}]
+\end{align}
+which can also be written as
+\begin{align}
+    C_{X}(t)=\int e^{itx} \,d\mathbb{P}_X
+\end{align}
+If X is a continuous random variable with density function $f_{X}(x)$, then\\
+\begin{align}
+     C_{X}(t)=\int e^{itx}f_{X}(x)\,dx
+\end{align}
+\end{lemma}\\
 Since $U$ and $V$ are given to be normal random variables, therefore their difference will also be a normal random variable.\\
 
 Here, let 
 \begin{align}
-   Y=3V-2U 
+   X=3V-2U 
 \end{align}
- \\where $Y$ is also a normal random variable with mean
+ \\where $X$ is also a normal random variable with mean
  \begin{align}
      M= 0 
  \end{align}
@@ -157,10 +171,16 @@ Here, let
 \begin{align}
     V_r= 32\times\frac{1}{9} + 22\times\frac{1}{4} = 2 
 \end{align}\\
-
+\begin{lemma}
+The area under the Gaussian PDF curve below and above the mean value is $\frac{1}{2}$
+\begin{align}
+    \implies  P(X>=M)= {\frac{1}{2}}   
+\end{align}
+The area under the curve and the x-axis is unity.\\
+\end{lemma}
 So it will be symmetric about mean that is 0.
 \begin{align}
-    \therefore P(Y>=0)= \boxed{\frac{1}{2}}    $(by symmetry property)$
+    \therefore P(X>=0)= \boxed{\frac{1}{2}}    $(by symmetry property)$
 \end{align}
 Hence option (b) is correct.
 \end{enumerate}
