@@ -165,22 +165,30 @@ Here, let
 \end{align}
  \\where $X$ is also a normal random variable with mean
  \begin{align}
-     M= 0 
+     X_M= \int_{-\infty}^{\infty}xf_x\,dx=0
  \end{align}
  and variance
 \begin{align}
-    V_r= 32\times\frac{1}{9} + 22\times\frac{1}{4} = 2 
+    X_{Vr}= \int_{-\infty}^{\infty}(Mean-x)^2f_x\,dx= 2
 \end{align}\\
 \begin{lemma}
 The area under the Gaussian PDF curve below and above the mean value is $\frac{1}{2}$
 \begin{align}
-    \implies  P(X>=M)= {\frac{1}{2}}   
+    \implies  P(X>=X_M)= {\frac{1}{2}}   
 \end{align}
 The area under the curve and the x-axis is unity.\\
 \end{lemma}
 So it will be symmetric about mean that is 0.
 \begin{align}
     \therefore P(X>=0)= \boxed{\frac{1}{2}}    $(by symmetry property)$
+\end{align}
+Cumulative density function of the curve 
+\begin{align}
+    CDF = \int_{-\infty}^{x}f(t)\,dt= \frac{1}{2}
+\end{align}
+Q-function
+\begin{align}
+Q(X)= 1-CDF= 1-\frac{1}{2}= \frac{1}{2}
 \end{align}
 Hence option (b) is correct.
 \end{enumerate}
