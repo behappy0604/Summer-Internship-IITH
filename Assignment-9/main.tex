@@ -150,7 +150,7 @@ Here, let
 \begin{align}
    X=3V-2U 
 \end{align}
- \\where $X$ is also a normal random variable with mean given as
+ \\where $X$ is also a normal random variable with mean given as $\mathbb{E}[X]$:
  \begin{align}
   \mathbb{E}[X]=\mathbb{E}[3V-2U]
  \end{align}
@@ -163,35 +163,34 @@ Here, let
  \begin{align}
      \mathbb{E}[X]=0
  \end{align}
- and variance
- \begin{column}
+ and variance as $var(X)$:
  
-
 \begin{align}
-    \implies \mathbb{E}[X^2]-\mathbb{E}[X]^2
-\end{align}\\
+    var(X)= \mathbb{E}[X^2]-\mathbb{E}[X]^2
+\end{align}
+   
 \begin{align}
-    \implies \mathbb{E}[(3V-2U)^2]-(3\mathbb{E}[V]-2\mathbb{E}[U])^2
+    var(X)= \mathbb{E}[(3V-2U)^2]-(3\mathbb{E}[V]-2\mathbb{E}[U])^2
 \end{align}
 \begin{multline}
-\implies \mathbb{E}[9V^2+4U^2-12UV]-9\mathbb{E}[V]^2-4\mathbb{E}[U]^2+\\12\mathbb{E}[V]\mathbb{E}[U] 
+ var(X)= \mathbb{E}[9V^2+4U^2-12UV]-9\mathbb{E}[V]^2\\-4\mathbb{E}[U]^2+12\mathbb{E}[V]\mathbb{E}[U] 
 \end{multline}
 \begin{multline}
-\implies 9\mathbb{E}[V^2]+4\mathbb{E}[U^2]-12\mathbb{E}[UV]-9\mathbb{E}[V]^2-4\mathbb{E}[U]^2+\\12\mathbb{E}[V]\mathbb{E}[U]
+ var(X)= 9\mathbb{E}[V^2]+4\mathbb{E}[U^2]-12\mathbb{E}[UV]-9\mathbb{E}[V]^2\\-4\mathbb{E}[U]^2+12\mathbb{E}[V]\mathbb{E}[U]
 \end{multline}
 \begin{multline}
- \implies 9(\mathbb{E}[V^2]-\mathbb{E}[V]^2)+4(\mathbb{E}[U^2]-\mathbb{E}[U]^2)-\\12\mathbb{E}[UV]-\mathbb{E}[U]\mathbb{E}[V])
+ var(X)= 9(\mathbb{E}[V^2]-\mathbb{E}[V]^2)+4(\mathbb{E}[U^2]-\mathbb{E}[U]^2)\\-12\mathbb{E}[UV]-\mathbb{E}[U]\mathbb{E}[V])
 \end{multline}
 \begin{align}
-    \implies 9($$var(V)$$)+4($$var(U)$$)-12(0)
+   var(X)= 9($$var(V)$$)+4($$var(U)$$)-12(0)
     \end{align}
     \\ (Since $\mathbb{E}[UV]$=$\mathbb{E}[U]$ $\mathbb{E}[V]$ for independent random variable)
  \end{column}
 \begin{align}
-    \implies 9\times \frac{1}{9}+4\times \frac{1}{4}
+   var(X)= 9\times \frac{1}{9}+4\times \frac{1}{4}
 \end{align}
 \begin{align}
-    \implies 2
+   var(X)= 2
 \end{align}
 
   
