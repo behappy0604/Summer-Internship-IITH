@@ -91,7 +91,7 @@ columns=fullflexible
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\cosec}{\,\text{cosec}\,}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
-\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \numberwithin{equation}{subsection}
 \makeatletter
@@ -125,7 +125,7 @@ https://github.com/behappy0604/Summer-Internship-IITH/tree/main/Assignment-9
 \end{lstlisting}
 %
 \section{Question No. 8.1} 
-\item Let U and V be two independent zero mean Gaussian random variables of variances $\dfrac{1}{4}$ and $\dfrac{1}{9}$ respectively. The probability $P(3V\geqslant2U)$ is
+ Let U and V be two independent zero mean Gaussian random variables of variances $\dfrac{1}{4}$ and $\dfrac{1}{9}$ respectively. The probability $P(3V\geqslant2U)$ is
 \begin{enumerate}
 \begin{multicols}{4}
 \setlength\itemsep{2em}
@@ -150,42 +150,42 @@ Here, let
 \begin{align}
    X=3V-2U 
 \end{align}
- \\where $X$ is also a normal random variable with mean given as $\mathbb{E}[X]$:
+ \\where $X$ is also a normal random variable with mean given as E[X]:
  \begin{align}
-  \mathbb{E}[X]=\mathbb{E}[3V-2U]
+  E[X]=E[3V-2U]
  \end{align}
  \begin{align}
-     \mathbb{E}[X]=\mathbb{E}[3V]-\mathbb{E}[2U]
+     E[X]=E[3V]-E[2U]
  \end{align}
  \begin{align}
-     \mathbb{E}[X]=3\mathbb{E}[V]-2\mathbb{E}[U]
+     E[X]=3E[V]-2E[U]
  \end{align}
  \begin{align}
-     \mathbb{E}[X]=0
+     E[X]=0
  \end{align}
  and variance as $var(X)$:
  
 \begin{align}
-    var(X)= \mathbb{E}[X^2]-\mathbb{E}[X]^2
+    var(X)=E[X^2]-E[X]^2
 \end{align}
    
 \begin{align}
-    var(X)= \mathbb{E}[(3V-2U)^2]-(3\mathbb{E}[V]-2\mathbb{E}[U])^2
+    var(X)= E[(3V-2U)^2]-(3E[V]-2E[U])^2
 \end{align}
 \begin{multline}
- var(X)= \mathbb{E}[9V^2+4U^2-12UV]-9\mathbb{E}[V]^2\\-4\mathbb{E}[U]^2+12\mathbb{E}[V]\mathbb{E}[U] 
+ var(X)= E[9V^2+4U^2-12UV]-9E[V]^2\\-4E[U]^2+12E[V]E[U] 
 \end{multline}
 \begin{multline}
- var(X)= 9\mathbb{E}[V^2]+4\mathbb{E}[U^2]-12\mathbb{E}[UV]-9\mathbb{E}[V]^2\\-4\mathbb{E}[U]^2+12\mathbb{E}[V]\mathbb{E}[U]
+ var(X)= 9{E[V^2]+4E[U^2]-12E[UV]\\-9E[V]^2-4E[U]^2+12E}[V]E[U]
 \end{multline}
 \begin{multline}
- var(X)= 9(\mathbb{E}[V^2]-\mathbb{E}[V]^2)+4(\mathbb{E}[U^2]-\mathbb{E}[U]^2)\\-12\mathbb{E}[UV]-\mathbb{E}[U]\mathbb{E}[V])
+ var(X)= 9(E[V^2]-E[V]^2)+4(E[U^2]-E[U]^2)\\-12E[UV]-E[U]E[V])
 \end{multline}
 \begin{align}
    var(X)= 9($$var(V)$$)+4($$var(U)$$)-12(0)
     \end{align}
-    \\ (Since $\mathbb{E}[UV]$=$\mathbb{E}[U]$ $\mathbb{E}[V]$ for independent random variable)
- \end{column}
+    \\ (Since $E$=$E[U]$ $E[V]$ for independent random variable)
+
 \begin{align}
    var(X)= 9\times \frac{1}{9}+4\times \frac{1}{4}
 \end{align}
@@ -211,7 +211,7 @@ Cumulative density function of the curve
 \end{align}
 Q-function
 \begin{align}
-Q(X)= 1-CDF= 1-\frac{1}{2}= \frac{1}{2}
+Q(x)= \frac{1}{\sqrt{2\pi}}\int_{x}^{\infty}e^{\frac{-t^2}{2}dt}=\frac{1}{2}
 \end{align}
 Hence option (b) is correct.
 \end{enumerate}
