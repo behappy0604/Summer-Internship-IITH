@@ -162,7 +162,7 @@ Here, let
 Using properties of variance for two independent random variable we have variance $var(X)$:
  
 \begin{align}
-   var(X)= 9($$var(V)$$)+4($$var(U)$$)-12(0)
+   var(X)= 9$$var(V)$$+4$$var(U)$$
     \end{align}
     
 
@@ -189,10 +189,23 @@ Cumulative density function of the curve
 \begin{align}
     CDF = \int_{-\infty}^{x}f(t)\,dt= \frac{1}{2}
 \end{align}
-Q-function
+ If X is a gaussian random variable with mean $\mu$ and variance ($\sigma$)^2 then
+
 \begin{align}
-Q(x)= \frac{1}{\sqrt{2\pi}}\int_{x}^{\infty}e^{\frac{-t^2}{2}dt}=\frac{1}{2}
+    Y= \frac{X-\mu}{\sigma^2}
 \end{align}
+
+ Q-function Q(x) will be:
+ 
+\begin{align}
+Q(x)= P(X>x)= P(Y>y)= \frac{1}{2}
+\end{align}
+where,
+
+\begin{align}
+    y= \frac{x-\mu}{\sigma^2}
+\end{align}
+
 Hence option (b) is correct.
 \end{enumerate}
 \end{document}
