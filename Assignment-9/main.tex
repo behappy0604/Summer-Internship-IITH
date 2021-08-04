@@ -143,9 +143,12 @@ $
 $
 \end{multicols}
 \section{Solution}
-\begin{lemma}
-The standard normal distribution is a normal distribution with a mean of zero and standard deviation of 1. The standard normal distribution is centered at zero and the degree to which a given measurement deviates from the mean is given by the standard deviation\\
-\end{lemma}
+\begin{definition}[Standard Gaussian Variable]
+The standard normal distribution is a normal distribution with a mean of zero and standard deviation of 1. The PDF of a gaussian distribution function is given by
+\begin{align}
+f(x) = \frac{1}{\sqrt{2 \pi}} \exp \brak{-\frac{x^2}{2}}
+\end{align}
+\end{definition}
 Since $U$ and $V$ are given to be normal random variables, therefore their difference will also be a normal random variable.\\
 
 Here, let 
@@ -164,7 +167,7 @@ Here, let
 Using properties of variance for two independent random variable we have variance $var(X)$:
  
 \begin{align}
-   var(X)= 9$$var(V)$$+4$$var(U)$$
+   var(X)= 9 var(V)+4 var(U)
     \end{align}
     
 
@@ -185,7 +188,7 @@ The area under the curve and the x-axis is unity.\\
 \end{lemma}
 So it will be symmetric about mean that is 0.
 \begin{align}
-    \therefore P(X>=0)= \boxed{\frac{1}{2}}    $(by symmetry property)$
+    \therefore P(X>=0)= \boxed{\frac{1}{2}}    \text{(by symmetry property)}
 \end{align}
 Cumulative density function of the curve 
 \begin{align}
@@ -195,7 +198,7 @@ Cumulative density function of the curve
 
 Q-function in terms of standard gaussian can be represented as:
 \begin{align}
-    Q(x)=\frac{1}{2\pi}\int_{x}^{\infty}e^{\frac{-t^2}{2}}^{dt}
+Q(x)=\frac{1}{2\pi}\int_{x}^{\infty}e^{\frac{-t^2}{2}} dt
 \end{align}
 where $F_x(x)$ is tail distribution and $f_x(x)$ is CDF\\
 
